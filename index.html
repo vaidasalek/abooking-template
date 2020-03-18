@@ -10,6 +10,8 @@
 	<link href="css/main.css" type="text/css" rel="stylesheet">
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 	<link rel="stylesheet" href="/resources/demos/style.css">
+	<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 </head>
 <body style="">
 	<div id="root">
@@ -34,7 +36,7 @@
 							<i class="fas fa-bars"></i>
 						</div>
 						<nav class=" nav nav-masthead justify-content-center">
-							<a class="nav-link--hl" href="/newcar">Nuomoti automobilį</a><a class="nav-link srollink active" href="#index">Pradžia</a><a class="nav-link srollink" href="#mainNav">Katalogas</a>
+							<a class="nav-link--hl" href="/assets/pages/newcar.html">Nuomoti automobilį</a><a class="nav-link srollink active" href="#index">Pradžia</a><a class="nav-link srollink" href="/assets/pages/rent-list.html#mainNav">Katalogas</a>
 						</nav>
 						<div class="clearfix"></div>
 					</div>
@@ -95,8 +97,8 @@
 									<label for="from">Nuomotis nuo:</label>
 									<div class="relative">
 										<div class="react-datepicker-wrapper">
-											<div class="react-datepicker__input-container">
-												<input autocomplete="off" class="input" type="text" value="03/16/2020">
+											<div>
+												<input autocomplete="off" class="input" name="date" type="text" value="03/16/2020">
 											</div>
 										</div><i aria-hidden="true" class="fa fa-caret-down d-md-none"></i>
 									</div>
@@ -106,7 +108,7 @@
 									<div class="relative">
 										<div class="react-datepicker-wrapper">
 											<div class="react-datepicker__input-container">
-												<input autocomplete="off" class="input" type="text" value="03/23/2020">
+												<input autocomplete="off" class="input" name="date" type="text" value="03/23/2020">
 											</div>
 										</div><i aria-hidden="true" class="fa fa-caret-down d-md-none"></i>
 									</div>
@@ -120,624 +122,52 @@
 						</div>
 					</div>
 				</div>
-				<div class="main-wrapper" id="mainNav">
-					<div class="">
-						<div class="main-navigation">
-							<a class="nav-link--main active" href="/automobiliu-nuoma">Visi</a><a class="nav-link--main" href="/favourites">Mėgstamiausi</a><a class="nav-link--main" href="/map">Žemėlapis</a>
-						</div>
-						<hr>
-					</div>
-					<div class="main">
-						<div class="container">
-							<div>
-								<div class="mobile-menu topbar col-12 margin-bottom">
-									<h2 class="text-center padding">RODYTI FILTRUS</h2>
-								</div>
-								<div class="row justify-content-md-end">
-									<div class="col-12 m-hidden">
-										<div class="topbar margin-bottom min-height">
-											<div class="topbar-content">
-												<div class="form-group">
-													<label class="d-md-none" for="inputState">Miestas:</label>
-													<div class="relative">
-														<select class="form-control" id="inputState">
-															<option value="">
-																Visi miestai
-															</option>
-															<option value="1">
-																Vilnius
-															</option>
-															<option value="2">
-																Kaunas
-															</option>
-															<option value="3">
-																Klaipėda
-															</option>
-															<option value="36">
-																Palanga
-															</option>
-															<option value="45">
-																Šalčininkai
-															</option>
-															<option value="61">
-																Karmėlava
-															</option>
-														</select><i aria-hidden="true" class="fa fa-caret-down"></i>
-													</div>
-												</div>
-												<div class="form-group gamintojai">
-													<label class="d-md-none" for="inputState">Gamintojas:</label>
-													<div class="relative">
-														<select class="form-control" id="inputState">
-															<option value="">
-																Visi gamintojai
-															</option>
-															<option value="1">
-																Audi
-															</option>
-															<option value="2">
-																BMW
-															</option>
-															<option value="3">
-																Volkswagen
-															</option>
-															<option value="4">
-																Alfa Romeo
-															</option>
-															<option value="5">
-																Fiat
-															</option>
-															<option value="6">
-																Ford
-															</option>
-															<option value="7">
-																Mazda
-															</option>
-															<option value="8">
-																Mercedes-Benz
-															</option>
-															<option value="9">
-																Mitsubishi
-															</option>
-															<option value="10">
-																Nissan
-															</option>
-															<option value="11">
-																Opel
-															</option>
-															<option value="12">
-																Peugeot
-															</option>
-															<option value="13">
-																Renault
-															</option>
-															<option value="14">
-																Škoda
-															</option>
-															<option value="15">
-																Tesla
-															</option>
-															<option value="16">
-																Toyota
-															</option>
-															<option value="17">
-																Volvo
-															</option>
-															<option value="18">
-																Kita
-															</option>
-															<option value="19">
-																Acura
-															</option>
-															<option value="20">
-																Aixam
-															</option>
-															<option value="21">
-																Alpina
-															</option>
-															<option value="22">
-																Aston Martin
-															</option>
-															<option value="23">
-																Bentley
-															</option>
-															<option value="24">
-																Buick
-															</option>
-															<option value="25">
-																Cadillac
-															</option>
-															<option value="26">
-																Chevrolet
-															</option>
-															<option value="27">
-																Chrysler
-															</option>
-															<option value="28">
-																Citroen
-															</option>
-															<option value="29">
-																Dacia
-															</option>
-															<option value="30">
-																Dodge
-															</option>
-															<option value="31">
-																Ferrari
-															</option>
-															<option value="32">
-																Fisker
-															</option>
-															<option value="33">
-																GMC
-															</option>
-															<option value="34">
-																Honda
-															</option>
-															<option value="35">
-																Hummer
-															</option>
-															<option value="36">
-																Hyundai
-															</option>
-															<option value="37">
-																Infiniti
-															</option>
-															<option value="38">
-																Isuzu
-															</option>
-															<option value="39">
-																Iveco
-															</option>
-															<option value="40">
-																Jaguar
-															</option>
-															<option value="41">
-																Jeep
-															</option>
-															<option value="42">
-																Kia
-															</option>
-															<option value="43">
-																Lada
-															</option>
-															<option value="44">
-																Lancia
-															</option>
-															<option value="45">
-																Land Rover
-															</option>
-															<option value="46">
-																Lexus
-															</option>
-															<option value="47">
-																Lincoln
-															</option>
-															<option value="48">
-																Maserati
-															</option>
-															<option value="49">
-																Mercedes Benz
-															</option>
-															<option value="50">
-																MG
-															</option>
-															<option value="51">
-																Mini
-															</option>
-															<option value="52">
-																Porsche
-															</option>
-															<option value="53">
-																Royce Roll
-															</option>
-															<option value="54">
-																Saab
-															</option>
-															<option value="55">
-																Seat
-															</option>
-															<option value="56">
-																Skoda
-															</option>
-															<option value="57">
-																Smart
-															</option>
-															<option value="58">
-																SsangYong
-															</option>
-															<option value="59">
-																Subaru
-															</option>
-															<option value="60">
-																Suzuki
-															</option>
-															<option value="61">
-																UAZ
-															</option>
-														</select><i aria-hidden="true" class="fa fa-caret-down"></i>
-													</div>
-												</div>
-												<div class="form-group modeliai">
-													<label class="d-md-none" for="inputState">Modelis:</label>
-													<div class="relative">
-														<select class="form-control" id="inputState">
-															<option value="">
-																Visi modeliai
-															</option>
-														</select><i aria-hidden="true" class="fa fa-caret-down"></i>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="d-md-none" for="ReactBootstrapSlider">Kaina:</label>
-													<div class="slider">
-														<div class="slider slider-horizontal" id="">
-															<div class="slider-track">
-																<div class="slider-track-low" style="left: 0px; width: 0%;"></div>
-																<div class="slider-selection" style="left: 0%; width: 100%;"></div>
-																<div class="slider-track-high" style="right: 0px; width: 0%;"></div>
-															</div>
-															<div class="tooltip tooltip-main top" role="presentation" style="left: 50%;">
-																<div class="tooltip-arrow"></div>
-																<div class="tooltip-inner">
-																	1 : 300
-																</div>
-															</div>
-															<div class="tooltip tooltip-min top" role="presentation" style="left: 0%;">
-																<div class="tooltip-arrow"></div>
-																<div class="tooltip-inner">
-																	1
-																</div>
-															</div>
-															<div class="tooltip tooltip-max top" role="presentation" style="left: 100%;">
-																<div class="tooltip-arrow"></div>
-																<div class="tooltip-inner">
-																	300
-																</div>
-															</div>
-															<div aria-valuemax="300" aria-valuemin="1" aria-valuenow="1" class="slider-handle min-slider-handle round" role="slider" style="left: 0%;" tabindex="0"></div>
-															<div aria-valuemax="300" aria-valuemin="1" aria-valuenow="300" class="slider-handle max-slider-handle round" role="slider" style="left: 100%;" tabindex="0"></div>
-														</div>
-														<div data-value="1,300" style="display: none;"></div><span class="left">€1</span><span class="right">€300</span>
-													</div>
-												</div>
-												<div class="form-group">
-													<label class="d-md-none" for="inputState">Rodoma:</label>
-													<div class="relative">
-														<select class="form-control" id="inputState">
-															<option value="populiariausi">
-																Populiariausi viršuje
-															</option>
-															<option value="naujausi">
-																Naujausi viršuje
-															</option>
-															<option value="seniausi">
-																Seniausi viršuje
-															</option>
-															<option value="pigiausi">
-																Pigiausi viršuje
-															</option>
-															<option value="brangiausi">
-																Brangiausi viršuje
-															</option>
-														</select><i aria-hidden="true" class="fa fa-caret-down"></i>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-12">
-									<div>
-										<div class="row">
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/BMW-M3/33">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/G7f1jyLoiyfHmLOL2DZsWLkgLpjeS2.jpeg"></div>
-														<p class="card-time">Kaunas</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">BMW</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 13.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">M3</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-Yaris/37">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/L8grJZeniNh7wDckWMY37QldBjYpdC.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 13.90</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Yaris</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-Corolla/38">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/d6jrMOG3eeh7kbyirbDC3AYgH3VGHX.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 16.45</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Corolla</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Honda-Civic/28">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/Hiy0Wb2NopGfvx09kXVywVRAxGY8xI.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Honda</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 30.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Civic</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Ford-Mondeo/63">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/amLKEcLT03wlKtOJ716tQ0uwvw4EwB.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Ford</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 19.63</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Mondeo</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/BMW-318%20Gran%20turismo/36">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/ERXZjKAhRZOXcpMwjzndN3JdiMcwVh.jpeg"></div>
-														<p class="card-time">Šalčininkai</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">BMW</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 36.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">318 Gran turismo</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Volkswagen-Passat/62">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/Rg8nxNtLZPdxoTmQAj7J4jyBicwTqc.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Volkswagen</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 22.43</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Passat</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-Prius/90">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/dChbkwjLyZrS5Z2j8iAiczWHeVOM2p.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 19.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Prius</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Skoda-Octavia/35">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/Gf4jaC4L2Tgtm9Hz56Ytqb2GrQP7qv.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Skoda</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 20.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Octavia</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-C-HR/66">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/Xzwqidxmi9HvzOC4yoowImVXabSJMw.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 26.30</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">C-HR</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Ford-Tourneo%20Custom/68">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/4Xx4SrDr7h7H2DYZUgb6o3jQRb7oj8.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Ford</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 44.86</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Tourneo Custom</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Volkswagen-Golf/58">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/wjauMQxaeXWNDa6tUzSXBKGOFjm9gw.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Volkswagen</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 17.84</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Golf</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Alfa%20Romeo-Giulia/18">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/zHJTBmUjfwF5UsrmgsTncrxsecALFA_GULIA2.jpg"></div>
-														<p class="card-time">Klaipėda</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Alfa Romeo</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 34.00</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Giulia</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Volkswagen-Touran/64">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/duVDBPMAbS40Ma2OaYADLUBEGpTYkG.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Volkswagen</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 20.68</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Touran</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Hyundai-i-30/61">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/QfJIse5WgaQXrHG3kN8lN3sSYHVCy1.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Hyundai</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 18.62</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">i-30</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Renault-Trafic/69">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/7E1D6ut0J03Xmk28HPJL1vbwQcjB1B.jpeg"></div>
-														<p class="card-time">Vilnius</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Renault</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 52.37</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Trafic</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-C-HR/77">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/t5E8SGcKmbPu79zzvLufzb7IeQq8lX.jpeg"></div>
-														<p class="card-time">Palanga</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 26.30</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">C-HR</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Volkswagen-Touran/82">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/flS39KAdwaViufQ3pzIbVCB2UkiAuo.jpeg"></div>
-														<p class="card-time">Palanga</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Volkswagen</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 20.68</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Touran</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Renault-Trafic/88">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/Fj4DXz82zphgKhEeAwAfyROBubGGF5.jpeg"></div>
-														<p class="card-time">Karmėlava</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Renault</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 52.37</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Trafic</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Toyota-Yaris/42">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/s76tt5ahhi6X3T8zQbrJX9D2p5PvTf.jpeg"></div>
-														<p class="card-time">Karmėlava</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Toyota</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 16.94</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Yaris</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Ford-Fiesta/48">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/D2MyOlZCcAL6RUu4hFlCV1yw5G3nAx.png"></div>
-														<p class="card-time">Karmėlava</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Ford</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 15.61</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Fiesta</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Ford-Fiesta/49">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/e6Ren6YXEgw98vY886yl1zoea0H2Ea.png"></div>
-														<p class="card-time">Palanga</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Ford</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 15.61</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Fiesta</h5>
-													</div>
-												</div></a>
-											</div>
-											<div class="col-sm-6 col-md-4 col-lg-3" itemtype="https://schema.org/Car">
-												<a href="/automobiliu-nuoma/Ford-Focus/55">
-												<div class="card">
-													<div class="card-body">
-														<div class="card-image"><img alt="" src="/uploads/JUHzXVLs3L7zwtx4ce0qQu9q02mmbz.jpeg"></div>
-														<p class="card-time">Palanga</p>
-														<p class="card-like"><i class="far fa-heart"></i></p>
-														<h5 class="card-title" itemprop="brand">Ford</h5>
-														<h5 class="card-title card-title--price" itemprop="price">€ 16.34</h5>
-														<h5 class="card-title card-title--sub" itemprop="model">Focus</h5>
-													</div>
-												</div></a>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+				<div class="container-fluid bg-white" id="mainNav">
+		<div class="row">
+			<div class="col-md-7 about--margin"><img class="maxw-100" src="https://redq.io/static/image/turbowp/01.png"></div>
+			<div class="col-md-5 d-flex align-items-center pr-md-30 about--margin">
+				<div>
+					<p></p>
+					<h2 class="about--header">Sukūrėme konkurenciją, kurios dėka, pas mus kainos mažiausios!</h2>
+					<p></p>
+					<p>Mes išnaršėme visą internetą ir subūrėme visus automobilių nuomotojus į vieną vietą. Atsiradusi papildoma konkurencija, verčia nuomotojus nuomoti automobilius pigiau!</p><small></small>
+					<p><small><i class="fa fa-exclamation-circle"></i>&nbsp; Jokių paslėptų papildomų mokesčių!</small></p>
+					<p><small><i class="fa fa-exclamation-circle"></i>&nbsp; Jokių išankstinių mokėjimų!</small></p>
+					<p class="chooseAuto"><a class="btn btn-warning info-button max-width" href="/assets/pages/rent-list.html#mainNav">RINKTIS AUTOMOBILĮ</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7 order-md-2 about--margin">
+				<div><img class="maxw-100" src="https://redq.io/static/image/turbowp/02.png"></div>
+			</div>
+			<div class="col-md-5 order-md-1 d-flex align-items-center pl-md-30 about--margin">
+				<div>
+					<div>
+						<p></p>
+						<h2 class="about--header">Kaip tai veikia?</h2>
+						<p></p>
+						<p>1. Išsirenkate, Jums patikusį automobilį!<br>
+						2. Užpildote rezervacijos formą, patvirtinate elektroninį paštą ir taip, tai viskas!</p>
+						<p>Valandos bėgyje su Jumis susisieks, automobilio savininkas ir papasakos Jums plačiau apie nuomą, bei pasiūlys papildomai užsisakyti automobilio pristatymą į vietą, navigaciją, vaikišką kėdutę...</p>
+						<p class="chooseAuto"><a class="btn btn-warning info-button max-width" href="/assets/pages/rent-list.html#mainNav">RINKTIS AUTOMOBILĮ</a></p>
 					</div>
 				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-7 about--margin"><img class="maxw-100" src="https://redq.io/static/image/turbowp/03.png"></div>
+			<div class="col-md-5 d-flex align-items-center pr-md-30 about--margin">
+				<div>
+					<p></p>
+					<h2 class="about--header">Turite papildomų klausimų? &nbsp;<i class="fa fa-comments"></i>&nbsp;</h2>
+					<p></p>
+					<p>Rašykite mums žemiau esančiais kontaktais ir mielai į juos atsakysime!&nbsp;</p><br>
+					<p class="chooseAuto"><a class="btn btn-warning info-button max-width" href="/assets/pages/rent-list.html#mainNav">RINKTIS AUTOMOBILĮ</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
 			</div>
 			<div>
 				<footer class="page-footer font-small cyan darken-3 footer-text" id="footer">
@@ -760,5 +190,9 @@
 	</script>
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
 </body>
 </html>
