@@ -3860,9 +3860,6 @@ input[type=button].btn-block, input[type=reset].btn-block, input[type=submit].bt
 	pointer-events: none;
 	cursor: default
 }
-.nav-tabs {
-	border-bottom: 1px solid #dee2e6
-}
 .nav-tabs .nav-item {
 	margin-bottom: -1px
 }
@@ -15619,3 +15616,6 @@ comment {
 		display: none
 	}
 }
+.bs-example{
+    	margin: 20px;
+    }
